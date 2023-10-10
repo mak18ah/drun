@@ -1,9 +1,11 @@
 #!/bin/bash
 
+set -xv 
+
 unamestr="$(uname)"
 
 if [[ "$unamestr" == "Linux" ]]; then
-  drun_path=$(find . -type d -iname drun)
+  drun_path=$(find . -type f -iname drun)
   sudo cp -Rv "$drun_path" /usr/local/bin/
   sudo chmod -R +x /usr/local/bin/drun
   touch ~/.bash_profile
