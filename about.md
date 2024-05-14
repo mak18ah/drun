@@ -17,11 +17,15 @@ Clone this repository and run the installer:
 Supported on Linux/OSX 
 
 ## Configuration 
-Add properties file(`drun.properties`) targeting the host/s operating system to the root of the project directory. Currently, `linux\osx` host OS's are supported. The host OS is targeted by adding the supported host OS segment to the filename, either of the following options:
+Add properties file(`drun.properties`) targeting the host/s operating system to the root of the project directory. Currently, `linux\osx` host OS's are supported. The host OS is targeted by adding the supported host OS segment to the filename, either of the following options (or both or need to support multiple host OS's):
 - drun.linux.properties 
 - drun.osx.properties
 
-The properties file is a set of key/value pairs that allows you to customize the following optional properties: specify docker image of choice, comma-delimited list of volumes to mount, assigning a working directory and comma-delimited list of options args that accepts any valid  `docker run` option
+The properties file is a set of key/value pairs that allows you to customize the following optional properties: 
+- `image` : specify docker image of choice
+- `volumes` : comma-delimited list of volumes to mount
+- `workingdir` :assigning a working directory
+- `options` : comma-delimited list of options args that accepts any valid  `docker run` option
 
 ### Sample 
 
