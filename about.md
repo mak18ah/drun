@@ -24,7 +24,7 @@ Add properties file(`drun.properties`) targeting the host/s operating system to 
 The properties file is a set of key/value pairs that allows you to customize the following optional properties: 
 - `image` : specify docker image of choice
 - `volumes` : comma-delimited list of volumes to mount
-- `workingdir` :assigning a working directory
+- `workingdir` : assigning a working directory
 - `options` : comma-delimited list of options args that accepts any valid  `docker run` option
 
 ### Sample 
