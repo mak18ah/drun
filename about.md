@@ -14,6 +14,21 @@ Clone this repository and run the installer:
 ./helper/install_drun.sh
 ```
 
+Supported on Linux/OSX 
+
+## Configuration 
+Add properties file(`drun.properties`) targeting the host/s operating system to the root of the project directory. Currently, `linux\osx` host OS's are supported. The host OS is targeted by adding the supported host OS segment to the filename, either of the following options:
+- drun.linux.properties 
+- drun.osx.properties
+
+The properties file is a set of key/value pairs that allows you to customize the following optional properties: specify docker image of choice, comma-delimited list of volumes to mount, assigning a working directory and comma-delimited list of options args that accepts any valid  `docker run` option
+
+### Sample 
+
+```
+$ cat drun.linux.properties
+image="golang:latest"
+``` 
 
 ## Why
 - Repeatability
